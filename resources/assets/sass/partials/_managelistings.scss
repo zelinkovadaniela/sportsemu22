@@ -1,0 +1,344 @@
+@mixin center($width: null, $height: null) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  @if not $width and not $height {
+    transform: translate(-50%, -50%);
+  } @else if $width and $height {
+    width: $width;
+    height: $height;
+    margin: -($width / 2) #{0 0} -($height / 2);
+  } @else if not $height {
+    width: $width;
+    margin-left: -($width / 2);
+    transform: translateY(-50%);
+  } @else {
+    height: $height;
+    margin-top: -($height / 2);
+    transform: translateX(-50%);
+  }
+}
+.btn{
+  border: none;
+}
+$break-small: 320px;
+$break-medium: 700px;
+$break-large: 1280px;
+@mixin form {
+  width: 50%;
+  margin: auto;
+}
+.managelisting-form{
+  @include form;
+}
+@mixin my-container{
+  min-height: 100vh;
+  margin-top: 0;
+  padding-top: 20px;
+  position: relative;
+  overflow: auto;
+}
+div.my-container{
+  @include my-container;
+  background: url(../img/managelistings/tennis-178696_1920.png);
+}
+div.my-container2{
+  @include my-container;
+  background: url(../img/managelistings/dumbbells-1634750_1920.png);
+
+
+}
+@mixin h1{
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+}
+h1#managelistings-h1{
+  @include h1;
+}
+h1#editlisting-h1{
+  margin-bottom: 150px;
+  color: #ffffff;
+  @include h1;
+
+}
+h1#createlinsting-h1{
+  @include h1;
+  margin-bottom: 150px;
+  color: #ffffff;
+}
+div.managelistings-des{
+  text-align: center;
+  display: block;
+  border: 1px solid #000000;
+  width: 600px;
+  height: 100px;
+  @include center;
+  @include centerer;
+  padding: 10px;
+  background: #ffffff;
+  top: 180px;
+  border-radius: 4px;
+}
+div.managelistings-des1{
+  text-align: center;
+  display: block;
+  border: 1px solid #000000;
+  width: 600px;
+  height: 100px;
+  float: right;
+  clear: right;
+  @include centerer;
+  padding: 10px;
+  background: #ffffff;
+
+}
+div.managelistings-des:hover{
+  background: #8eb4cb;
+  color: #ffffff;
+}
+div.managelistings-des1:hover{
+  background: #8eb4cb;
+  color: #ffffff;
+}
+div.listings {
+  max-width: 800px;
+  margin: auto;
+}
+@mixin listing {
+  max-width: 900px;
+  min-height: 300px;
+  background: #2e3436;
+  color: #8eb4cb;
+  text-align: center;
+  margin: auto;
+  margin-top: 200px;
+  padding-top: 50px;
+  opacity: 0.9;
+  border-radius: 4px;
+}
+div.listing1{
+  @include listing;
+  @media screen and (max-width: $break-large) {
+    margin-top: 300px;
+  }
+}
+div.listing3{
+  @include listing;
+  margin-top: 20px;
+}
+div.listing1:hover{
+  opacity: 1;
+}
+h2#managelistings-h2{
+  font-size: 3em;
+}
+p#managelistings-p {
+  font-size: 2em;
+}
+img.listing-image {
+  width: 100px;
+  height: 10%;
+}
+div.create-new-listing{
+  width: 100%;
+}
+div#buton-new-listing{
+  position: relative;
+}
+@mixin button {
+  margin-top: 30px;
+  color: #fff;
+  width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 5px;
+}
+a.btn-primary.btn{
+  @include button;
+  background: #64697f;
+  float: left;
+
+}
+input.btn-danger.btn{
+  @include button;
+  background: #761c19;
+  float: right;
+}
+input.btn-primary.btn {
+  @include button;
+  background: #64697f;
+  width: 100%;
+}
+button.btn-primary{
+  background: #64697f;
+  @include button();
+  width: 300px;
+  @include center;
+  margin-top: 520px;
+}
+a.btn-primary.btn:hover,
+a.btn-primary.btn:focus,
+input.btn-primary.btn:hover,
+input.btn-primary.btn:focus{
+  background: #BBBBBB;
+}
+input.btn-danger.btn:hover{
+  background: #a94442;
+}
+input.form-control{
+  height: 50px;
+}
+select#sport_id{
+  height: 50px;
+  width: 100%;
+}
+p.avalability-p{
+  text-align: center;
+}
+
+.mainimage {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+@mixin mainimage{
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: #761c19;
+  display: inline-block;
+}
+.mainimage + label {
+  @include mainimage;
+  @include center;
+  top: 6%;
+  padding: 30px 60px;
+}
+
+.mainimage:focus + label,
+.mainimage + label:hover {
+  background-color: #a94442;
+
+
+}
+.mainimage + label {
+  cursor: pointer; /* "hand" cursor */
+}
+.mainimage:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.mainimage + label * {
+  pointer-events: none;
+}
+.no-js .mainimage + label {
+  display: none;
+}
+.send-btn{
+  @include mainimage;
+  @include center;
+  padding: 10px 30px;
+  background: #3B55A0;
+  color: #ffffff;
+}
+.send-btn:focus,
+.send-btn:hover {
+  background: #5B7BD5;
+}
+table.reservation_table {
+  border-collapse: separate;
+  margin: auto;
+  border-spacing:0.1em;
+
+}
+.reservation_table th,
+.reservation_table td {
+  height: 50px;
+  width: 120px;
+  text-align: center;
+  background-color: #46423f;
+  color: #fff;
+}
+td button {
+  width: 150px;
+  height: 60px;
+  padding: 10px 15px;
+  margin: 0;
+  border-radius: 0px;
+  border: none;
+  text-align: center;
+  background-color: #7BC6FC;
+}
+div.remove-button{
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+button.booked{
+  background-color: #64697f;
+}
+h1#booking_h1{
+  @include h1;
+
+}
+
+p#booking_p{
+  text-align: center;
+  font-size: 1.5em;
+
+  margin-bottom: 50px;
+}
+button{
+  text-align: center;
+}
+button.btn-primary.btn:hover,
+button.btn-primary.btn:focus{
+  width: 300px;
+  background-color: #BBBBBB;
+  color: #000000;
+}
+div.modal-header h4{
+  font-size: 2em;
+}
+div.form-group{
+  font-size: 3em;
+  text-align: center;
+
+}
+button.book{
+  @include button;
+  margin-left: 50px;
+  background-color: #64697f;
+}
+button.book:hover{
+  background-color:#BBBBBB;
+}
+button.cancel, .control-group button.stripe-button-el{
+  @include button;
+  background-color: #761c19;
+}
+button.cancel:hover{
+  background-color: #a94442;
+}
+#myModal{
+  height: 350px;
+}
+p.previous-week,
+p.next-week{
+  display: none;
+}
+button.next_week, button.prev_week, button.this_week{
+  @include button;
+  margin-left: 205px;
+  background-color: #64697f;
+}
+div.control-group{
+  @include center();
+}

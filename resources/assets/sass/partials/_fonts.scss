@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+
+/* Typography
+*/
+h1, h2, h3, h4, h5, h6 { margin-top: 0rem; margin-bottom: -0.1rem;  }
+  h1 { font-size: 2.8rem; font-weight:500;}
+  h2 { font-size: 1.8rem; text-align:center; margin:0px 0px 0px 0px;padding:10px 0px 0px 0px;letter-spacing: 0.4rem; font-weight:700;text-transform: uppercase;  }
+  h2 span {border-bottom:2px solid #262626;  padding:3px 60px 1px 60px;}
+  h3 { font-size: 2.2rem; letter-spacing:0.1rem; text-transform: none;}
+  h4 { font-size: 1.2rem; letter-spacing:0.1rem; text-transform: uppercase; margin:0}
+  h5 { font-size: 1.4rem; font-weight:500;}
+  h6 { font-size: 1.6rem; font-weight:bold;}
+   h6 span {
+  display: inline-block;
+  position: relative;  
+  margin-bottom:20px;
+  line-height:8px;
+  }
+  h6 span:before,
+h6 span:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  border-top: 1px solid #fff;
+  bottom: 0;
+  width: 160px;
+  color: #fff;
+  @include small {width:100px;  }
+  @include medium {width:150px;  }
+  @include large {width:170px;  }
+}
+h6 span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+h6 span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+p { margin-top: 0; }
+
+/* Links */
+a, a:visited { color: #525857;  text-decoration: none;}
+a:hover, a:active { color: #525857; ; }

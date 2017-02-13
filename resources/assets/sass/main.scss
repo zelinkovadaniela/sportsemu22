@@ -1,0 +1,26 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+//Normalize
+@import "partials/Normalize.scss";
+// Modules
+@import "modules/variables";
+@import "modules/utility.scss";
+@import "modules/nouislider.scss";
+// styles
+@import "partials/grid.scss";
+@import "partials/header.scss";
+@import "partials/footer.scss";
+@import "partials/home.scss";
+@import "partials/listings.scss";
+@import "partials/profile.scss";
+@import "partials/booking.scss";
+@import "partials/fonts.scss";
+@import "partials/login.scss";
+@import "partials/form.scss";
+@import "partials/map.scss";
+@import "partials/lightslider.scss";
+@import "partials/managelistings.scss";
+@import "partials/imageupload.scss";
+
+html { font-size: 62.5%; }
+body { font:400 1.4rem 'Raleway', sans-serif; line-height:1.8rem;  color: #262626; }

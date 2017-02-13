@@ -1,0 +1,53 @@
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+@mixin inputfile{
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: #761c19;
+  display: inline-block;
+}
+.inputfile + label {
+  @include inputfile;
+  @include center;
+  top: 30%;
+  padding: 30px 60px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: #a94442;
+
+
+}
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+.inputfile:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+  pointer-events: none;
+}
+.no-js .inputfile + label {
+  display: none;
+}
+.send-btn{
+  @include inputfile;
+  @include center;
+  padding: 10px 30px;
+  background: #3B55A0;
+  color: #ffffff;
+}
+.send-btn:focus,
+.send-btn:hover {
+  background: #5B7BD5;
+}

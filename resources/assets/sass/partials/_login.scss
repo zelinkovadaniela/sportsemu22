@@ -1,0 +1,68 @@
+.login-bg{background:#64697F; height:100vh; padding-top:40px;}
+.login-container{max-width:500px; height:auto;  background:#232633; margin:0 auto; padding:60px 0; color:#afb1be; }
+.login-login{padding: 40px 0 60px 60px;width:100%; height:auto; font-size: 2rem;}
+.login-with{ padding: 0 0 20px 60px;width:100%; height:auto;}
+.login-or{width:100%; height:auto; padding:10px 0 30px 0; text-align:center; font-size:20px;}
+
+.login-fields{    color: #afb1be;
+        width: 100%;
+        margin-top:-2px;
+        background: rgb(50, 54, 74);
+        padding: 20px 100px;
+        border-top: 2px solid rgb(57, 61, 82);
+        border-bottom: 2px solid rgb(57, 61, 82);
+        border-right: none;
+        border-left: none;
+        outline: none;
+        font-family: 'Gudea', sans-serif;
+        box-shadow: none;}
+.button-wrap{width:100%; height:auto;}
+.login-button{width:auto;padding:40px 60px;}
+.forgot-password{padding:0 20px;}
+.forgot-password a,a:active, a:visited{padding:0px 40px; color:#afb1be;}
+.forgot-password a:hover{}
+.login-btn-submit{ 
+       width:auto;
+        border:2px solid #DC6180;
+        background:inherit;
+        border-radius:50px;
+        color: #DC6180;
+        font-size: 12px;
+        padding: 10px 170px;
+        text-decoration: none;
+        transition: all 0.5s ease-out;
+        text-align:center;
+        text-transform:uppercase;
+        }
+.login-btn-submit:hover{ 
+        color:white;
+        background:#DC6180 ;
+        cursor:pointer;
+        }
+.forgot-btn {
+        width:auto;
+        border:2px solid $lightblue;
+        background:inherit;
+        border-radius:50px;
+        color: $lightblue;
+        font-size: 12px;
+        padding: 10px 50px;
+        text-decoration: none;
+        transition: all 0.5s ease-out;
+        text-align:center;
+        text-transform:uppercase;
+}
+
+.forgot-btn:hover {
+        background:$lightblue ;
+        color:#fff;
+        text-decoration: none;
+}
+
+
+/* Register */
+.login-bg{background:#64697F; height:100vh; padding-top:40px;}
+.register-container{max-width:500px; height:auto;  background:#232633; margin:0 auto; padding:60px 0; color:#afb1be; }
+.r-register{padding: 40px 0 60px 60px; width:100%; height:auto; font-size: 2rem;}
+.login-with{ padding: 0 0 20px 60px;width:100%; height:auto;}
+.login-or{width:100%; height:auto; padding:10px 0 30px 0; text-align:center; font-size:20px;}

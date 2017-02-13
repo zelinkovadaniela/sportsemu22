@@ -1,0 +1,79 @@
+$small: 767px;
+$medium: 1199px;
+$large: 1499px;
+$softtext: #767676;
+$lightblue: #30ceba;
+.white{background:#fff;}
+@mixin centerer { align-items:center;justify-content: center;}
+
+@mixin small {
+  @media only screen and (max-width: $small) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: $small + 1) and (max-width: $medium) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $medium +1) and (max-width: $large) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media only screen and (min-width: $large + 1) {
+    @content;
+  }
+}
+
+
+
+.btn {
+  width:auto;
+  border:1px solid $lightblue;
+  border-radius: 5px;
+  color: $lightblue;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  text-align:center;
+}
+
+.btn:hover {
+  width:auto;
+  background:#0D6050 ;
+  color:#fff;
+  text-decoration: none;
+} 
+
+.btn-contact{
+  cursor: pointer;
+  width:100%;
+  border:1px solid $lightblue;
+  border-radius: 5px;
+  background:#fff;
+  color: $lightblue;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  text-align:center;
+}
+
+.btn-contact:hover {
+  background:#0D6050 ;
+  color:#fff;
+  text-decoration: none;
+} 
+
+.img-full {width: 100%; height:auto; display:block;  }
+.img-border {width: 100%; height:auto; display:block; border:5px solid #fff; border-radius:5px; }
+.img-profile {width: 100%; height:auto; display:block; border-radius:50%;  }
+.form-field{
+  background:#fff; opacity:1;
+}

@@ -1,0 +1,111 @@
+.fullcontainer-home{position:relative; width:100%; margin:0 auto; background: #eee; }
+.fullcontainer-home:nth-child(2) {display:flex;@include centerer; position:relative; height:500px; background:   linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2)
+    ),
+url(../img/home/hero.jpg); }
+.fullcontainer-home:nth-child(3) {position:relative; height:auto; background: linear-gradient(
+      rgba(255, 255, 229, 0.3), 
+      rgba(255, 255, 229, 0.3)
+    ),
+url(../img/bg/tennis.jpg); }
+.fullcontainer-home:nth-child(4) {position:relative; height:auto; background: linear-gradient(
+      rgba(22, 160, 133, 0.8), 
+      rgba(255, 255, 229, 0.8)
+    ),
+url(../img/home/runningbg.png); }
+
+.hero-form-fullcontainer{display:flex;flex:1;  @include centerer;}
+.hero-form-container{display: flex; flex-wrap: wrap; flex-direction:row; @include centerer; padding:0 100px 0 100px; max-width:1000px; height:120px; background: rgba(35, 38, 51, 0.8); border-radius:10px; }
+.form-field-wrap{display:flex; flex:1; @include centerer; width:auto; margin:0 40px;}
+.h-s-bg{text-align:center; flex:1; padding:20px; background:#fff; border-radius:10px;}
+.h-s-title{padding:20px; }
+.h-s-text{ padding:20px;}
+// text on how it works
+.h-icon{padding: 0 0 20px 0; color:#64697F}
+.h-title{flex:1; @include centerer; text-align:center; padding: 20px 0; min-height:50px;}
+.h-text{flex:1;padding: 20px 0; min-height:50px; text-align:center;}
+
+/* Homepage Sports */
+$bg-opacity: 0.3;
+@mixin home-sports-cell {  position:relative; height:auto; color:#fff;}
+.fullcontainer-home:nth-child(5) { position:relative; height:400px; 
+@include small{height:800px;}
+@include medium{height:800px;}}
+.fullcontainer-home:nth-child(5) a { font: 400; text-shadow: 1px 1px #000; color:#fff; text-decoration:none;}
+
+.fullcontainer-home:nth-child(5) .cell:nth-child(1) { @include home-sports-cell;
+background:   linear-gradient(
+      rgba(255, 255, 255, $bg-opacity), 
+      rgba(255, 255, 255, $bg-opacity)
+    ),
+url(../img/home/badminton.jpg) no-repeat center; }
+.fullcontainer-home:nth-child(5) .cell:nth-child(2) {position:relative; height:auto; 
+background:   linear-gradient(
+      rgba(255, 255, 255, $bg-opacity), 
+      rgba(255, 255, 255, $bg-opacity)
+    ),
+url(../img/home/tennis.jpg) no-repeat center; }
+.fullcontainer-home:nth-child(5) .cell:nth-child(3) {position:relative; height:auto; 
+background:   linear-gradient(
+      rgba(255, 255, 255, $bg-opacity), 
+      rgba(255, 255, 255, $bg-opacity)
+    ),
+url(../img/home/squash.jpg) no-repeat center; }
+.fullcontainer-home:nth-child(5) .cell:nth-child(4) {position:relative; height:auto; 
+background:   linear-gradient(
+      rgba(255, 255, 255, $bg-opacity), 
+      rgba(255, 255, 255, $bg-opacity)
+    ),
+url(../img/home/pilates.jpg) no-repeat center; }
+.fullcontainer-home:nth-child(5) .cell:nth-child(5) {position:relative; height:auto; 
+background:   linear-gradient(
+      rgba(255, 255, 255, $bg-opacity), 
+      rgba(255, 255, 255, $bg-opacity)
+    ),
+    url(../img/home/swimming.jpg) no-repeat center; }
+.fullcontainer-home:nth-child(5) .cell:nth-child(6) {position:relative; height:auto; 
+background:   linear-gradient(
+      rgba(255, 255, 255, $bg-opacity), 
+      rgba(255, 255, 255, $bg-opacity)
+    ),
+url(../img/home/dance.jpg) no-repeat center; }
+.fullcontainer-home:nth-child(5) .cell:nth-child(7) {position:relative; height:auto; 
+background:   linear-gradient(
+      rgba(255, 255, 255, $bg-opacity), 
+      rgba(255, 255, 255, $bg-opacity)
+    ),
+url(../img/home/gym.jpg) no-repeat center; }
+.fullcontainer-home:nth-child(5) .cell:nth-child(8) {position:relative; height:auto; 
+background:   linear-gradient(
+      rgba(255, 255, 255, $bg-opacity), 
+      rgba(255, 255, 255, $bg-opacity)
+    ),
+url(../img/home/football.jpg) no-repeat center; }
+.cell-text{display:flex; @include centerer;height:200px; width:100%;
+}
+
+
+/* Search bar styling */
+
+.h-form-wrap{display:flex; flex-direction:row;}
+
+.h-btn-submit{ 
+       width:auto;
+        border:2px solid #DC6180;
+        background:inherit;
+        border-radius:50px;
+        color: #DC6180;
+        font-size: 12px;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: all 0.5s ease-out;
+        text-align:center;
+        text-transform:uppercase;
+        }
+.h-btn-submit:hover{ 
+        color:white;
+        background:#DC6180 ;
+        cursor:pointer;
+        }
+

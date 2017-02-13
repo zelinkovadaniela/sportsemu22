@@ -1,0 +1,28 @@
+@mixin l-bg-pad {background:#fff; padding:20px;}
+@mixin border{ }
+.l-name{@include border; @include l-bg-pad; }
+.l-desc{@include border; @include l-bg-pad; flex:1; min-height:200px; }
+.l-sports{@include border; @include l-bg-pad; width:100%; height:auto;}
+
+.l-fullcontainer-maps{position:absolute; top:0; right:0; width:300px; height:100vh; background:#ff00ff; }
+.l-cell-map{ flex: 0 0 500px; height:100vh;}
+.l-sports-title-wrap{display:flex; @include centerer; padding:10px;text-align:center;background:#fff;width:100% }
+.l-sports-title{ text-align:center;background:#fff;width:100%; padding:10px;height:auto; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+.l-sports{display:flex; @include centerer; flex:1; height:auto; padding:10px 0;}
+.l-near-wrap{flex:1; height:auto; padding:10px; background:#fff;}
+.l-price{display:flex; @include centerer; flex:1; height:auto; padding:10px; background:#fff; border-top:1px solid #ddd;}
+.l-near{display:flex; @include centerer; flex:1; height:auto;  background:#fff; border-top:1px solid #ddd;}
+/* listings slug */
+.fullcontainer-listings{position:relative; width:100%; height:400px; margin:0 auto; background: #eee; }
+.l-wrap{ flex:1; background:#fff; margin-bottom:20px;}
+.l-wrap-single{flex:1; margin:10px; background:#fff;}
+.l-wrap-no-m{ flex:1; background:#fff; }
+.l-bg{padding:20px;}
+.l-header{z-index:1; display:flex; @include centerer; height:auto; padding:20px 30px 20px 30px; background:#64697F; font-weight:700; color:#fff;}
+.l-map{ width:100%; height:300px;}
+.l-open-row{width:100%; height:auto; background:#f9f9f9; padding:10px 0px 10px 30px}
+.l-open-row:nth-child(even){background:#fff;}
+.l-b-table{width:100%;background:#fff;}
+.l-b-tr{padding:10px;}
+.l-b-th{padding:10px;}
+.l-time{padding-left:20px;}
